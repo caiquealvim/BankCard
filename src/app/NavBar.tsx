@@ -6,7 +6,7 @@ const NavBar = () => {
   return (
     <div className='w-[100%] z-[100] bg-white p-[2rem]'>
         <div className='flex flex-row items-center justify-around text-zinc-400 mx-auto'>
-        <Image width={200} height={200} className='rounded-full' src="/images/logo.png" alt='foto do perfil-caique'/>
+        <Image width={200} height={200} className='rounded-full' src="/images/Logo.png" alt='foto do perfil-caique'/>
         <div className='flex items-center gap-4 '>
             <ul className='md:flex hidden items-center space-x-10'>
                 <li><a href="#" className=' hover:text-black'>Home</a></li>

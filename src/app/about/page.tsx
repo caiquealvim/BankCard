@@ -23,7 +23,7 @@ const About = () => {
        </p>
        </div>
        <div>
-        <Image src="/images/logo2.png" width={400} height={400} alt='logo2' className='object-cover lg:mx-auto md:ml-[7rem] '/>
+        <Image src="/images/Logo2.png" width={400} height={400} alt='logo2' className='object-cover lg:mx-auto md:ml-[7rem] '/>
        </div>
        <div className='mt-[5rem]'>
         <Image src="/images/Card3.png" width={600} height={600} alt='logo2' className='object-cover lg:mx-auto md:ml-[7rem]'/>

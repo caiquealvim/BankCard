@@ -109,7 +109,7 @@ const Blog = () => {
 
 
         <div className='flex flex-col gap-6'>
-        <Image width={200} height={200} className='rounded-full' src="/images/logo.png" alt='foto do perfil-caique'/>
+        <Image width={200} height={200} className='rounded-full' src="/images/Logo.png" alt='foto do perfil-caique'/>
         <p className='lg:text-[15px] md:text-[25px] sm:text-[35px]'>
           if you trust in our team you can create your own
           website with us. After all, you can create your own website
