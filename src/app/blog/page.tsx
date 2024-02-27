@@ -2,7 +2,6 @@ import { ArrowLeftIcon, StarIcon } from '@heroicons/react/16/solid'
 import React from 'react'
 import Image from 'next/image'
 import { BsEmojiAngryFill, BsFacebook, BsLinkedin, BsTwitterX } from 'react-icons/bs'
-import { GoNumber } from 'react-icons/go'
 import { FcCellPhone } from 'react-icons/fc'
 import { BiLocationPlus } from 'react-icons/bi'
 
@@ -34,10 +33,10 @@ const Blog = () => {
               <span>4.5</span>
               <StarIcon width={20}/>
               </div>
-              <div className='flex flex-col gap-2 '>
+              <div className='flex flex-col gap-2'>
               <p className='text-zinc-200 text-[13px] text-center'>
-                For me it's the best thing what i made because
-                i'm looking for something better than just looking.
+                For me its the best thing what i made because
+                i am looking for something better than just looking
               </p>
               <div className='flex flex-col gap-[0.2rem] ml-[80px]'>
               <p className='text-black font-semibold  '><i>Caique Alvim</i></p>
@@ -54,8 +53,8 @@ const Blog = () => {
               </div>
               <div className='flex flex-col gap-2 mt-5'>
               <p className='text-zinc-200 text-[13px] text-center'>
-                For me it's the best thing what i made because
-                i'm looking for something better than just looking.
+                For me its the best thing what i made because
+                im looking for something better than just looking.
               </p>
               <div className='flex flex-col gap-[1rem] ml-[80px]'>
               <p className='text-black font-semibold  mt-8'><i>Caique Alvim</i></p>
@@ -72,8 +71,8 @@ const Blog = () => {
               </div>
               <div className='flex flex-col gap-2 mt-5'>
               <p className='text-zinc-200 text-[13px] text-center'>
-                For me it's the best thing what i made because
-                i'm looking for something better than just looking.
+                For me its the best thing what i made because
+                im looking for something better than just looking.
               </p>
               <div className='flex flex-col gap-[1rem] ml-[80px]'>
               <p className='text-black font-semibold  mt-8'><i>Caique Alvim</i></p>
@@ -90,8 +89,8 @@ const Blog = () => {
               </div>
               <div className='flex flex-col gap-2 '>
               <p className='text-zinc-200 text-[13px] text-center'>
-                For me it's the best thing what i made because
-                i'm looking for something better than just looking.
+                For me its the best thing what i made because
+                im looking for something better than just looking.
               </p>
               <div className='flex flex-col ml-[80px]'>
               <p className='text-black font-semibold '><i>Caique Alvim</i></p>
