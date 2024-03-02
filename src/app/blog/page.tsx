@@ -1,12 +1,26 @@
+'use client'
+import { useEffect } from "react";
 import { ArrowLeftIcon, StarIcon } from '@heroicons/react/16/solid'
 import React from 'react'
 import Image from 'next/image'
 import { BsEmojiAngryFill, BsFacebook, BsLinkedin, BsTwitterX } from 'react-icons/bs'
 import { FcCellPhone } from 'react-icons/fc'
 import { BiLocationPlus } from 'react-icons/bi'
+import 'aos/dist/aos.css'; 
+import AOS from 'aos';
 
 
 const Blog = () => {
+  useEffect(()=>{
+    AOS.init({
+      duration: 1000, 
+      easing: 'ease', 
+      once: true, 
+      anchorPlacement: 'top-bottom',
+    })
+    },[])
+
+
   return (
     <div className='bg-white w-auto h-full text-white'>
 
@@ -16,18 +30,18 @@ const Blog = () => {
           <button className='border w-[5rem] bg-slate-800 rounded-full p-4 text-white font-semibold 
           hover:p-5 transition-all duration-150 mb-8 '><a href="/"><ArrowLeftIcon/></a></button>
           <div className='flex w-[50%]'>
-           <p className='pr-2  mb-[1.3rem] text-black'>About Us</p>
-              <div className='bg-yellow-200 rounded-full w-5 h-5'></div>
-              <div className='bg-indigo-300 rounded-full w-5 h-5 '></div>
+           <p  data-aos="fade-right" className='pr-2  mb-[1.3rem] text-black'>About Us</p>
+              <div className='bg-yellow-200 rounded-full w-5 h-5' data-aos="fade-up"></div>
+              <div className='bg-indigo-300 rounded-full w-5 h-5 ' data-aos="fade-left"></div>
           </div>
-          <h1 className='text-6xl text-black'>What our clients say</h1>
-           <p className='text-zinc-600 mt-5'>
+          <h1 data-aos="zoom-in-left" className='text-6xl text-black'>What our clients say</h1>
+           <p  data-aos="zoom-in-left"className='text-zinc-600 mt-5'>
          if you have a dream you can be part of our team
          and what you need we will provide for you as soon as possible.
          </p>
           </div>
 
-          <div className='grid grid-cols-2 gap-7 mt-[10rem] lg:col-span-1 md:col-span-2 sm:col-span-3'>
+          <div data-aos="zoom-out" className='grid grid-cols-2 gap-7 mt-[10rem] lg:col-span-1 md:col-span-2 sm:col-span-3'>
             <div className='bg-blue-500 w-[15rem] h-[10rem] rounded-xl'>
               <div className='flex flex-row justify-around mt-3'>
               <span>4.5</span>
@@ -46,7 +60,7 @@ const Blog = () => {
               
           </div>
 
-          <div className='bg-blue-500 w-[15rem] h-[20rem]  rounded-xl mx-auto'>
+          <div  className='bg-blue-500 w-[15rem] h-[20rem]  rounded-xl mx-auto'>
               <div className='flex flex-row justify-around mt-3'>
               <span>4.5</span>
               <StarIcon width={20}/>
@@ -104,7 +118,7 @@ const Blog = () => {
      </div>
       </main>
 
-    <footer className='bg-zinc-300 opacity-75 w-[100%] h-full  text-black pt-10 mt-10'>
+    <footer className='bg-zinc-300 opacity-75 w-[100%] h-full  text-black pt-10 mt-10' data-aos="fade-up">
       <div className='grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-5 lg:ml-[10rem] md:mx-auto'>
 
 
@@ -149,7 +163,7 @@ const Blog = () => {
  
       </div>
 
-      <div className='w-[80%] border border-zinc-400 border-solid mt-5 mx-auto'>
+      <div  className='w-[80%] border border-zinc-400 border-solid mt-5 mx-auto'>
       </div>
 
       <div className='flex flex-row justify-between mt-3 w-[80%] mx-auto'>

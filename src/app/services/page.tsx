@@ -1,9 +1,23 @@
+'use client'
+import { useEffect } from "react";
 import { AdjustmentsHorizontalIcon, ArchiveBoxArrowDownIcon, CalendarDaysIcon, GlobeAltIcon, ArrowLeftIcon } from '@heroicons/react/16/solid'
 import { CreditCardIcon } from '@heroicons/react/16/solid'
 import { WalletIcon } from '@heroicons/react/16/solid'
 import React from 'react'
+import 'aos/dist/aos.css'; 
+import AOS from 'aos';
 
 const Services = () => {
+  useEffect(()=>{
+    AOS.init({
+      duration: 1000, 
+      easing: 'ease', 
+      once: true, 
+      anchorPlacement: 'top-bottom',
+    })
+    },[])
+
+
   return (
     <div className='w-[100%] h-full bg-purple-200'>
 
@@ -13,14 +27,14 @@ const Services = () => {
         <button className='border w-[5rem] bg-slate-800 rounded-full p-4 mb-6 text-white font-semibold 
         hover:p-5 transition-all duration-150 '><a href="/"><ArrowLeftIcon/></a></button>
         <div className='flex'>
-         <p className='pr-2  mb-[1.3rem]'>OUR SERVICES</p>
-       <div className='bg-yellow-200 rounded-full w-5 h-5'></div>
-       <div className='bg-indigo-300 rounded-full w-5 h-5 '></div>
+         <p data-aos="fade-right" className='pr-2  mb-[1.3rem]'>OUR SERVICES</p>
+       <div className='bg-yellow-200 rounded-full w-5 h-5' data-aos="fade-up"></div>
+       <div className='bg-indigo-300 rounded-full w-5 h-5 'data-aos="fade-left"></div>
        </div>
-        <h1 className='text-5xl text-black font-semibold mt-5'>EXPLORE THE RANG OF LOANTEMAS FINANCIAL SERVICES</h1>
+        <h1 data-aos="flip-down" className='text-5xl text-black font-semibold mt-5'>EXPLORE THE RANG OF LOANTEMAS FINANCIAL SERVICES</h1>
         </div>
-        <div className='w-[50%] lg:mt-[20rem] mt-[5rem] mx-auto'>
-        <p className='text-zinc-500 mb-8'>with our finacial team you will have te best
+        <div data-aos="flip-left" data-aos-delay= "500"  className='w-[50%] lg:mt-[20rem] mt-[5rem] mx-auto'>
+        <p  className='text-zinc-500 mb-8'>with our finacial team you will have te best
         investiments when you buy your shoops and after all
         you will so happy.</p>
         <button className='border bg-slate-800 rounded-full p-4 text-white font-semibold 
@@ -31,7 +45,9 @@ const Services = () => {
     </div>
      
 
-       <div className='col-span-3'>
+       <div className='col-span-3'  data-aos="fade-down"
+     data-aos-easing="linear"
+     data-aos-duration="1500">
         
           <div className='grid grid-cols-1 sm:grid-cols-2 
           md:grid-cols-3 gap-[1rem] items-center mt-9 lg:ml-[10rem] sm:ml-[7rem] mr-[5rem] '>
